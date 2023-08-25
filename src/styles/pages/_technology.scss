@@ -1,0 +1,117 @@
+.technology__wrapper {
+  position: relative;
+  margin-top: 100px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.technology__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 280px 280px;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.technology__item {
+  width: 280px;
+  background-color: transparent;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: $yellow;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+.technology__img {
+  position: relative;
+  width: 296px;
+  height: 152px;
+  @include filter-drop-shadow;
+
+  svg {
+    position: absolute;
+  }
+
+  &--1 {
+    svg {
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+
+  &--2 {
+    svg {
+      top: 50px;
+      left: 50%;
+    }
+  }
+
+  &--3 {
+    svg {
+      top: 10px;
+      left: 50%;
+    }
+  }
+
+  &--4 {
+    svg {
+      top: 40%;
+      right: 20px;
+    }
+  }
+}
+
+.technology__swiper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.technology-swiper-image {
+  width: 310px;
+}
+
+.technology-swiper-text {
+  width: 300px;
+  @include filter-drop-shadow;
+}
+
+.technology-swiper-text .swiper-pagination {
+  text-align: right;
+}
+
+.technology-swiper-text .swiper-controlls {
+  margin-top: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.technology-swiper-text .swiper-prev,
+.technology-swiper-text .swiper-next {
+  button {
+    width: 60px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+  }
+}
+
+.technology-swiper-text .swiper-pagination-current {
+  color: $yellow;
+}

@@ -1,0 +1,36 @@
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-block__link {
+  font-weight: 700;
+  color: inherit;
+
+  &--order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 34px;
+    padding: 9px 15px;
+    border: 2px solid $brand-brighter;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  &--phone {
+    display: none;
+
+    @media (min-width: 821px) {
+      display: block;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

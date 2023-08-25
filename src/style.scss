@@ -1,0 +1,20 @@
+@import './styles/colors';
+@import './styles/global';
+@import './styles/mixins';
+
+// blocks
+@import './styles/blocks/page';
+@import './styles/blocks/header';
+@import './styles/blocks/logo';
+@import './styles/blocks/menu';
+@import './styles/blocks/user-block';
+@import './styles/blocks/social';
+@import './styles/blocks/scroll-down';
+
+// pages
+@import './styles/pages/main';
+@import './styles/pages/about';
+@import './styles/pages/how-it-work';
+@import './styles/pages/technology';
+@import './styles/pages/questions';
+@import './styles/pages/contacts';

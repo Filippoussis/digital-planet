@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  @media (max-width: 820px) {
+    background-color: $black;
+  }
+}
+
+.header__wrapper {
+  @media (max-width: 820px) {
+    min-height: 56px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  max-width: 1240px;
+  min-height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+.header__item {
+  @media (max-width: 820px) {
+    flex: 1;
+  }
+}
+
+.header__logo {
+  @media (max-width: 820px) {
+    justify-content: start;
+  }
+}
+
+.header__menu {
+  @media (max-width: 820px) {
+    justify-content: end;
+    order: 1;
+  }
+}
+
+.header__user-block {
+  @media (max-width: 820px) {
+    justify-content: center;
+  }
+}

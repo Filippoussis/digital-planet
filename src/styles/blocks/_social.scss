@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  &--facebook:hover,
+  &--facebook:focus {
+    color: $facebook;
+  }
+
+  &--twitter:hover,
+  &--twitter:focus {
+    color: $twitter;
+  }
+}

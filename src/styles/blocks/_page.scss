@@ -1,0 +1,50 @@
+.page {
+  position: relative;
+  height: 100vh;
+  padding: 1px;
+}
+
+.page__container {
+  @media (max-width: 820px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  max-width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.page__title {
+  margin-bottom: 0;
+
+  &--main {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+
+    @media (min-width: 821px) {
+      margin-top: 230px;
+      font-size: 96px;
+    }
+  }
+
+  &--secondary {
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+    text-decoration-color: $brand-brighter;
+
+    @media (min-width: 821px) {
+      margin-top: 180px;
+      font-size: 44px;
+      text-underline-offset: 18px;
+    }
+  }
+}
